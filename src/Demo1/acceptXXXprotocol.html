@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("c1").onclick = function () {
+                if (document.getElementById("c1").checked == true) {
+                    document.getElementById("btn").disabled = false;
+                } else {
+                    document.getElementById("btn").disabled = true;
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+<input type="checkbox" id="c1" name="c1">同意协议
+<input type="button" id="btn" name="btn" value="regist" disabled="false">
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script  src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" ></script>
+    <title>测试</title>
+    <script type="text/javascript" >
+        function disable()
+        {
+            document.getElementById("accept").disabled=true
+        }
+        function enable()
+        {
+            document.getElementById("accept").disabled=false
+        }
+    </script>
+</head>
+<body>
+<input type="checkBox" onclick="if (this.checked) {enable()} else {disable()}">同意协议
+<br />
+<br />
+<br />
+<input type="button" id="accept" disabled="true" value="确定">
+</body>
+</html>-->

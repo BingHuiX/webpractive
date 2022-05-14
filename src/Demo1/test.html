@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>user</td>
+        <td>
+            <input type="text" placeholder="请输入用户名">
+        </td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>
+            <input type="password" placeholder="请输入密码">
+        </td>
+    </tr>
+
+</table>
+<table>
+    <tr>
+        <td>*证件类型</td>
+        <td><input type="radio" id="id_card" name="type">
+            <label for="id_card">身份证</label>
+            <input type="radio" id="bank_card" name="type">
+            <label for="bank_card">银行卡</label></td>
+    </tr>
+    <tr>
+        <td><label>*身份证/卡号</label></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td><label>*登入密码</label></td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td><label>*确认密码</label></td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td><label>*动态验证码</label></td>
+        <td><input type="text"></td>
+        <td><input type="button" value="发送动态验证码"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="checkbox" id="c1"><label for="c1">我已阅读并同意<a>《商城用户注册协议》</a></label></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="button" value="立即注册" id="btn"></td>
+    </tr>
+</table>
+</body>
+</html>

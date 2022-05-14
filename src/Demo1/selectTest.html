@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--JQUERY-->
+    <script type="text/javascript" src="../res/jquery/jquery-1.11.1-min.js"></script>
+    <title>Title</title>
+</head>
+
+
+<body>
+<div id="d1">
+    <select id="selectBtn">
+        <option value="1">jack</option>
+        <option value="2">li</option>
+        <option value="3">he</option>
+        <option value="4">xu</option>
+    </select>
+    <button id="btn1">btn1</button>
+</div>
+
+</body>
+<script>
+    $(function (){
+        $("#btn1").click(function (){
+            $("#selectBtn").val("li");
+
+        });
+
+    });
+</script>
+</html>
